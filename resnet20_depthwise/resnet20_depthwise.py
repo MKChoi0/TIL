@@ -238,7 +238,6 @@ if __name__=='__main__':
   best_acc = 0
   epoch = 0
   global_steps = 0
-  torch.autograd.set_detect_anomaly(True)
   while True:
     epoch += 1
     global_steps = train(epoch, global_steps)
